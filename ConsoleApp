@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using ClassLibrary1;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double radius;
+            double area;
+            double a, b, c, p, s;
+            string str;
+            Console.Write("Do you want to count the area of triangle? [y/n]: ");
+            str = Console.ReadLine();
+            switch (str)
+            {
+                case "n":
+                    Console.Write("Enter radius of a circle:");
+                    radius = Convert.ToDouble(Console.ReadLine());
+                    Class1.CircleArea(radius);
+                    break;
+                case "y":
+                    Console.WriteLine("Enter a: ");
+                    a = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Enter b: ");
+                    b = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Enter c: ");
+                    c = Convert.ToDouble(Console.ReadLine());
+                    Class1.TriangleArea(a, b, c);
+                    break;
+
+            }
+        }
+    }
+}
