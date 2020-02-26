@@ -27,6 +27,7 @@ namespace ClassLibrary1
 
                     Console.WriteLine("Area equals: {0}", s);
                     Console.ReadLine();
+                    Console.WriteLine("Thank you");
                    
         }
     }
